@@ -7,6 +7,10 @@ Testuino::Testuino( int green, int red ){
   startUp();
 }
 
+static Testuino::Builder Testuino::builder(){
+  return Builder();
+}
+
 void Testuino::startUp(){
   digitalWrite(greenPin, HIGH);
   digitalWrite(redPin, HIGH);
